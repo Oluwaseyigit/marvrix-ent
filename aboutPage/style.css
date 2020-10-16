@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+nav{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 25px auto;
+    
+}
+nav li a{
+    text-decoration: none;
+    color: #000000;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before{
+    transition: all .5s;
+}
+nav ul li a:hover{
+   color: red;
+}
+nav ul li a{
+    position: relative;
+}
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+nav ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    column-gap: 25px;
+   
+}
+
+.logo > img{
+    width: 100px;
+    margin-top: 0px;
+    overflow: hidden;
+}
+.logo-nav{
+    display: flex;
+}
+.bag img{
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+iframe{
+   
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 350px;
+}
+
+.vid-container{
+    display: flex;
+    margin-bottom: 40px;
+}
+.about-marvrix{
+    margin-bottom: 30px;
+}
+.about-marvrix p, .about-marvrix h3{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+.about-marvrix h3{
+    padding: 10px;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.upcoming-events{
+    background: #f5f5f5;
+    position: relative;
+   
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.upcoming-events > p{
+    font-size: 36px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 500;
+}
+.founders, .vice-presidents, .other-positions, .publicists{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    
+}
+.head{
+    padding-top: 10px;
+    font-weight: 500;
+}
+.vice-one, .vice-one img, .publicist, .publicist img{
+    width: 190px;
+}
+
+.vice-one, .founder, .position, .publicist{
+    margin: 0px 10px;
+}
+
+.founder img{
+    width: 300px;
+    height: auto;
+}
+
+.position, .position img{
+    width: 200px;
+}
+.text{
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+
+footer{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}

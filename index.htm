@@ -3,70 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Montserrat:wght@300;400;500;600&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Marvrix Entertainment</title>
 </head>
 <body>
-    <section class="landing-page"> 
-        <div class="logo-nav">
-            <div class="logo">
-                <img src="images/logo.svg" alt="logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="aboutPage/index.htm">About Us</a></li>
-                    <div class="dropdown">
-                        <li class="dropbtn">Events</li>
-                        <div class="dropdown-content">
-                            <a href="#">Games Retreat</a>
-                            <a href="#">Christmas Dinner</a>
-                            <a href="#">Valentine Dinner</a>
-                            <a href="#">Marvrix Awards</a>
-                            <a href="#">Marvrix Party</a>
-                        </div>
-                    </div>
-                    <li><a href="#">Merchandise </a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-            <div class="bag">
-                <img src="images/shopping-bag1.png" alt="shopping-bag">
-            </div>
-        </div>
-       
-            <img src="images/background.svg" alt="">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+            <img src="images/logo.svg" alt="" class="logo">
+        <ul>
+            <li><a href="../homePage/index.htm" class="active">Home</a></li>
+                <li><a href="../aboutPage/index.htm">About Us</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact Us</a></li>
+        </ul>
+      <!-- <img class="landing-image" src="images/background.svg" alt=""> -->
             
-            <div class="landing-text">
-                <p class="marvrix" >MARVRIX ENTERTAINMENT</p>
-                <P class="paradigm">...a paradigm shift</P>
-            </div>
-    </section>
-    <section class="upcoming-events">
+    <div class="landing-text">
+        <p class="marvrix" >MARVRIX ENTERTAINMENT</p>
+        <P class="paradigm">...a paradigm shift</P>
+    </div>
+    </nav>
+    
+   <section class="upcoming-events">
         <p>Upcoming Events</p>
         <div class="events">
             <div class="event">
                 <img src="images/ambitious-creative-co-rick-barrett-HnUHOBuJ7s4-unsplash.jpg" alt="">
                 <p class="head">Games Night</p>
-                <p>Wed, 19th June  | Manchester</p>
-                <button>RSVP</button>
+                <p class="date">Wed, 19th June  | Manchester</p>
             </div>
             <div class="event">
                 <img src="images/ambitious-creative-co-rick-barrett-HnUHOBuJ7s4-unsplash.jpg" alt="">
                 <p class="head">Games Night</p>
-                <p>Wed, 19th June  | Manchester</p>
-                <button>RSVP</button>
+                <p class="date">Wed, 19th June  | Manchester</p>
+                
             </div>
             <div class="event">
                 <img src="images/kelsey-chance-tAH2cA_BL5g-unsplash.jpg" alt="">
                 <p class="head">Games Night</p>
-                <p>Wed, 19th June  | Manchester</p>
-                <button>RSVP</button>
+                <p class="date">Wed, 19th June  | Manchester</p>
             </div>
         </div>
-    </section>
-    <section class="entertainment-news">
+    </section> 
+    <!--<section class="entertainment-news">
         <p>Entertainment News</p>
         <div class="container">
             <div class="news">
@@ -118,27 +102,27 @@
                 <img src="images/laura-chouette-2S4Ob6H_1Sw-unsplash.jpg" alt="">
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="contact-location">
         <div class="contact">
             <p>Contact</p>
             <div class="address-container">
                 <div class="address">
-                    <img src="images/marker.svg" alt="marker-icon">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                     <p>Tambov, Russia</p>
                 </div>
                 <div class="address">
-                    <img src="images/icons8-important-mail-30.png" alt="">
+                    <i class="fa fa-envelope" aria-hidden="true" style="font-size: 23px;"></i>
                     <p>mavrixentertainment@gmail.com</p>
                 </div>
                 <div class="address">
-                    <img src="images/phone.svg" alt="">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
                     <p>+7 (980) 782-60-44</p>
                 </div>
                 <div class="icons">
-                    <a href="#"><img src="images/insta.svg" alt="Instagram"></a>
-                    <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
-                    <a href="#"><img src="images/youtube.svg" alt="Youtube"></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>

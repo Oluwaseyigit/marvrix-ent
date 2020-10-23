@@ -1,36 +1,18 @@
-const nextArrow = document.querySelector('.fa-angle-right')
-const backArrow = document.querySelector('.back-arrow')
-backArrow.addEventListener('click', previousMembers)
-nextArrow.addEventListener('click', nextMembers)
-
-//Create an array for the images
-
-//Identify that the elements in the array are images
-
-
-
-function nextMembers(e){
-    //Get the image from html
-    const event = document.querySelector('.event')
-    const imageNo = event.images.length
-
-    console.log(imageNo)
-
-    console.log('next')
-    
-    e.preventDefault()
-}
-
-
-
-
-
-
-
-
-
-function previousMembers(e){
-
-    console.log('previous')
-    e.preventDefault()
-}
+(function($) { 
+    $(function() { 
+      $('nav ul li a:not(:only-child)').click(function(e) {
+        $(this).siblings('.nav-dropdown').toggle();
+        $('.dropdown').not($(this).siblings()).hide();
+        e.stopPropagation();
+      });
+      $('html').click(function() {
+        $('.nav-dropdown').hide();
+      });
+      $('#nav-toggle').click(function() {
+        $('nav ul').slideToggle();
+      });
+      $('#nav-toggle').on('click', function() {
+        this.classList.toggle('active');
+      });
+    }); 
+  })(jQuery);

@@ -9,19 +9,32 @@
     <title>About Us</title>
 </head>
 <body>
-   <nav>
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-        <i class="fa fa-bars"></i>
-    </label>
-        <img src="images/logo.svg" alt="" class="logo">
-    <ul>
-        <li><a href="../homePage/index.htm" >Home</a></li>
-            <li><a href="#" class="active">About Us</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Contact Us</a></li>
-    </ul>
-   </nav>
+    <section class="nav-bar">
+        <div class="nav-container">
+          <div class="brand">
+                <img src="images/logo.svg">
+          </div>
+          <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                <li><a href="../homePage/index.htm">Home</a></li>
+                <li><a href="../aboutPage/index.htm">About Us</a></li>
+                <li><a href="#">Events</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="../GamesRetreat/index.htm" style="color: #ffffff;">Games Retreat</a></li>
+                            <li><a href="#" style="color: #ffffff;">Valentine Dinner</a></li>
+                            <li><a href="#" style="color: #ffffff;">Christmas Dinner</a></li>
+                            <li><a href="#" style="color: #ffffff;">Marvrix Awards</a></li>
+                            <li><a href="#" style="color: #ffffff;">Marvrix Party</a></li>
+                            <li><a href="../musicPage/index.htm" style="color: #ffffff;">Promotions</a></li>
+                        </ul>
+                </li>
+                <li><a href="#">Merchendise</a></li>
+                <li><a href="../homePage/index.htm#contact-location">Contact Us</a></li>
+                </ul>
+          </nav>
+        </div>
+      </section>
     <section class="vid-container">
         <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"  frameborder="0"></iframe>
     </section>
@@ -215,7 +228,7 @@
 
 
 
-
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

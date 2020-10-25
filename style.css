@@ -133,12 +133,6 @@ nav ul li ul li a {
     display: block !important;
   }
 }
-
-@media screen and (max-width:450px){
-  .contact{
-    padding-right: 70px;
-  }
-}
 #nav-toggle {
   position: absolute;
   left: 18px;

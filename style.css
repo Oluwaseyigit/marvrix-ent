@@ -71,14 +71,15 @@ nav ul li ul li {
   min-width: 190px;
 }
 nav ul li ul li a {
-  padding: 15px;
+  padding: 10px;
   line-height: 20px;
 }
 
 .nav-dropdown {
   position: absolute;
   display: none;
-  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.9);
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 .nav-mobile {

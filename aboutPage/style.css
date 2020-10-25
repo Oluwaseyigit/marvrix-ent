@@ -67,7 +67,7 @@ body{
     color: #ffffff;
   }
   nav ul li ul li a {
-    padding: 15px;
+    padding: 10px;
     line-height: 20px;
     color: #ffffff;
   }
@@ -75,7 +75,8 @@ body{
   .nav-dropdown {
     position: absolute;
     display: none;
-    background: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.9);
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
   }
  
@@ -224,7 +225,7 @@ iframe{
     
 }
 
-.founder p{
+.founder p, .ceo p{
     text-align: center;
 }
 .head{
@@ -239,21 +240,32 @@ iframe{
     text-align: center;
     width: auto;
 }
-.vice-one, .vice-one img, .publicist, .publicist img{
+.vice-one, .vice-one img, .publicist, .publicist img, .ceo img{
     width: 150px;
 }
 
-.vice-presidents img, .other-positions img, .publicists img, .founder img{
+.vice-presidents img, .other-positions img, .publicists img, .founder img, .ceo img{
     border-radius: 50%;
 }
 
-.vice-one, .founder, .position, .publicist{
+.vice-one, .founder, .position, .publicist, .ceo{
     margin: 0px 10px;
 }
 
-.founder img{
+.founder img, .ceo img{
     width: 300px;
     height: auto;
+}
+
+.ceo, .ceo img{
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.ceo{
+  width: 100%;
+  justify-content: center;
 }
 
 .position, .position img{
@@ -271,7 +283,7 @@ footer{
 }
 
 @media screen and (max-width: 698px){
-    .founder,.founder img{
+    .founder,.founder img, .ceo, .ceo img{
         width: 190px;
     }
 

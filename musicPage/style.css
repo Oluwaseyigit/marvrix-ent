@@ -171,12 +171,12 @@ body{
     transform: rotate(-45deg);
   }
 
-  .container{
+  .container, .marvrix-container{
     display: flex;
     margin: 30px 30px;
 
   }
-  .video-text{
+  .video-text, .marvrix-tv > p{
     font-size: 25px;
     text-align: center;
     font-family: 'Montserrat';
@@ -195,7 +195,7 @@ body{
     width: 45%;
     height: 30vh;
   }
-  .container iframe{
+  .container iframe, .marvrix-container iframe {
     width: 700px;
     height: 450px;
     margin: 0 auto;
